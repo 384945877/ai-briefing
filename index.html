@@ -228,6 +228,24 @@
       line-height: 1.28;
       letter-spacing: -.035em;
     }
+    .focus {
+      max-width: 700px;
+      margin: 10px 0 14px;
+      border-left: 3px solid var(--accent);
+      border-radius: 12px;
+      background: rgba(143, 61, 37, .06);
+      padding: 10px 13px;
+      color: var(--ink);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+    .focus-label {
+      display: inline-block;
+      margin-right: 8px;
+      color: var(--accent);
+      font: 900 12px/1 ui-sans-serif, system-ui, sans-serif;
+      letter-spacing: .08em;
+    }
     .draft {
       max-width: 700px;
       position: relative;
@@ -847,6 +865,23 @@
   <script>
     const cards = [...document.querySelectorAll('.card')];
     const dateFilter = document.querySelector('#date-filter');
+    const focusKeywords = ['真正', '关键', '核心', '不是', '但', '实际', '机会', '压力', '边界', '变化', '说明', '意味着', '要观察', '要看', '更重要'];
+
+    const cleanText = (text) => text.replace(/\s+/g, ' ').trim();
+    const clipText = (text, max = 96) => {
+      const value = cleanText(text);
+      return value.length > max ? `${value.slice(0, max - 1)}…` : value;
+    };
+    const extractFocus = (card) => {
+      const paragraphs = [...card.querySelectorAll('.draft > p')].map((p) => cleanText(p.textContent)).filter(Boolean);
+      const sentences = paragraphs.flatMap((paragraph) => (
+        paragraph.split(/(?<=[。！？；])/).map(cleanText).filter((sentence) => sentence.length >= 14)
+      ));
+      const judged = sentences.find((sentence) => (
+        sentence.length <= 120 && focusKeywords.some((keyword) => sentence.includes(keyword))
+      ));
+      return clipText(judged || sentences[0] || paragraphs[0] || '这条内容的重点是判断事件背后的产业变化。');
+    };
 
     cards.forEach((card) => {
       const meta = card.querySelector('.meta-time');
@@ -859,6 +894,11 @@
       const content = document.createElement('div');
       content.className = 'content-card';
       while (card.firstChild) content.appendChild(card.firstChild);
+      const draft = content.querySelector('.draft');
+      const focus = document.createElement('p');
+      focus.className = 'focus';
+      focus.innerHTML = `<span class="focus-label">表达重点</span>${extractFocus(content)}`;
+      draft?.before(focus);
       card.append(stamp, content);
     });
 
