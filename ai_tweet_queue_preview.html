@@ -363,6 +363,23 @@
       </div>
     </section>
     <main>
+      <article class="card" id="item-github-vscode-extension">
+        <h2>GitHub 扩展投毒：AI 编程入口先暴露的不是模型，是权限</h2>
+        <div class="meta-time">2026-05-20 22:57 CST</div>
+        <section class="draft"><p>GitHub 这次最值得看的，不是“3,800 个仓库”这个数字，而是入口。</p>
+<p>BleepingComputer 报道称，攻击者声称拿到约 3,800 个 GitHub 私有或内部仓库。GitHub 确认了事件，但强调没有客户数据或敏感数据暴露。入口不是 GitHub 主站被直接打穿，而是一名员工安装了被投毒的 VS Code 扩展。</p>
+<p>这个边界很重要。它不是“GitHub 全站沦陷”，也不是客户代码库被大规模拖走。可它仍然值得放进 AI 行业观察里，因为 AI 编程正在把 IDE 变成新的默认入口。</p>
+<p>过去我们讲 AI coding，注意力通常放在模型：谁补全更准，谁会改 bug，谁能跑 terminal，谁能读 repo。真正麻烦的是，为了让这些工具好用，开发者会主动把越来越多权限交给本地工作区。扩展能读代码、扫配置、碰 token、调用命令；agent 再往前走一步，还会接 MCP、云服务、数据库、浏览器和内部文档。</p>
+<p>这时，一个 VS Code 扩展就不只是“提高效率的小插件”了。它可能站在整条链路的门口。</p>
+<p>以前扩展市场的风险看起来像开发者自己的小问题：装错一个主题、装错一个 formatter，最多清理一下环境。现在不是。公司鼓励工程师用 AI 工具提速，工程师又会跟着教程、README、群聊推荐去装扩展。攻击者不需要骗过所有人，只要骗到一个权限足够高、工作区足够敏感的人。</p>
+<p>这也是 AI agent 落地时一个不太好听的问题：它越有用，越需要权限；越需要权限，越不像普通 SaaS。聊天产品出错，多数时候是回答错。编程 agent 出错，可能是改文件、读密钥、跑命令、推代码。安全模型如果还停在“用户自己判断这个扩展可不可信”，迟早不够用。</p>
+<p>GitHub 这次的损失边界看起来被控制住了。但它像一次预演：AI 编程工具的竞争不会只发生在模型榜单上，也会发生在谁能管理好本地权限、扩展供应链、凭据隔离和企业审计上。未来企业采购 coding agent，问的可能不只是“它写代码准不准”，还会问：它通过哪些扩展进来？拿了哪些权限？能不能证明它没把不该碰的东西带出去？</p>
+<p>我不觉得这会让公司少用 AI 编程。相反，越是能提效的工具，越不会因为一次安全事件停下来。真正会变的是采购和合规的重心。AI 编程从个人效率工具变成企业生产入口之后，扩展市场、插件权限、agent sandbox 这些原本偏工程细节的东西，会被拉到台前。</p>
+<p>这条新闻的提醒很直接：AI 编程入口还没完全成熟，攻击者已经开始绕着入口找缝了。</p>
+<section class="sources" aria-label="来源"><div class="source-heading">来源</div><ul><li><a href="https://www.bleepingcomputer.com/news/security/github-confirms-breach-of-3-800-repos-via-malicious-vscode-extension/" target="_blank" rel="noreferrer">BleepingComputer, GitHub confirms breach of 3,800 repos via malicious VSCode extension, 2026-05-20</a></li><li><a href="https://www.techmeme.com/" target="_blank" rel="noreferrer">Techmeme, GitHub confirms breach of 3,800 repos via malicious VS Code extension, 2026-05-20</a></li></ul></section></section>
+        <button class="toggle" type="button">展开全文</button>
+      </article>
+
       <article class="card" id="item-1">
         <h2>OpenRouter 调用量：中国模型把“便宜好用”变成全球流量</h2>
         <div class="meta-time">2026-05-20 15:07 CST</div>
