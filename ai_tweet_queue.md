@@ -18142,3 +18142,96 @@ BMS 的意义在另一头。制药公司不是普通知识办公场景。研发�
 ### 来源
 - Anthropic, KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance, 2026-05-19, https://www.anthropic.com/news/anthropic-kpmg
 - Bristol Myers Squibb, Bristol Myers Squibb Announces Strategic Agreement with Anthropic to Position Claude Enterprise as the Shared Intelligence Platform Across Its Global Operations, 2026-05-20, https://investors.bms.com/iframes/press-releases/press-release-details/2026/Bristol-Myers-Squibb-Announces-Strategic-Agreement-with-Anthropic-to-Position-Claude-Enterprise-as-the-Shared-Intelligence-Platform-Across-Its-Global-Operations/default.aspx
+
+## 2026-05-21 11:24 CST｜阿里自研 AI 芯片：国产算力竞争从“替代英伟达”走向整栈交付
+
+### 候选热点
+- 候选 A：阿里云在 5 月 20 日发布 Zhenwu M890 AI 训练/推理芯片、Panjiu AL128 128 卡超节点、ICN Switch，并宣布 Qwen3.7-Max 面向长程 agent 任务。Reuters、Bloomberg、China Daily、Techmeme 均有报道或聚合。
+- 候选 B：Financial Times / Semafor 报道 Nvidia 过去 16 个月约 900 亿美元 AI 交易网络，涉及 145+ 家公司。强度很高，但本轮更需要补中国 AI 产业链覆盖。
+- 候选 C：Google I/O 后续 Gemini、Search AI Mode、Workspace agent 仍在发酵，但页面已有多条 Google 相关内容，继续写会重复。
+
+### dbs-content 选题诊断报告
+- 推荐形式：X 单条长推。适合从“中国 AI 不是只补模型，开始把芯片、互联、模型、云平台打包成一套交付”切入。
+- 文字洁癖风险：⚠️ 中。容易写成“国产替代胜利”或“挑战英伟达”的口号。必须保留事实边界：M890 参数和客户数据来自阿里/媒体报道，真实性已由多家媒体交叉确认，但性能对标仍是厂商口径。
+- 封面/标题/开头吸引力：✅ 强。Zhenwu M890、560,000 累计出货、400+ 外部客户、Qwen3.7-Max、128 卡超节点，信息密度足够。
+- 表达效率：✅ 高。核心判断一句话：阿里想卖的不是一颗国产 AI 芯片，而是一套能承接 agent 工作负载的云上基础设施。
+- 认知落差：✅ 有。多数报道会写“阿里发布新芯片”；更值得看的是国内云厂商开始把模型能力和算力供给绑定到同一张产品路线图里。
+- AI 辅助工作流：用 Reuters 核 M890、三倍性能、Qwen3.7-Max、35 小时连续任务；用 China Daily 核 560,000 出货、400+ 客户、128 卡超节点；用 Bloomberg/Techmeme 判断国际传播热度。
+- 是否值得写：✅ 值得。它补上中国 AI 基础设施侧的最新动作，也回应“页面不能只看海外”的产品需求。
+- 适合 X 单条长推还是 thread：单条长推。事实很多，但主线只有一条：从模型发布转向整栈交付。
+- 第一句话进入：从“阿里这次发布的重点，不是一颗芯片，而是它把芯片放进了 agent 的交付链条里”进入。
+
+### 为什么最终选这条
+这条是过去 24 小时内中国 AI 产业链里最完整的信号：不是单独发模型，也不是单独讲国产芯片，而是把芯片、交换芯片、128 卡服务器、Qwen3.7-Max 和云平台放在同一场发布里。它比继续追 Google I/O 后续更能补齐页面的中国 AI 视角。
+
+### 事实核查状态
+- 已核：Reuters 报道称，阿里发布 Zhenwu M890，由平头哥/T-Head 研发，面向训练和推理，性能为前代 Zhenwu 810E 的三倍。
+- 已核：Reuters 报道称，阿里宣布 Qwen3.7-Max，面向高级编码、长程 agent 任务，称可连续运行最高 35 小时且性能不降。
+- 已核：China Daily 报道称，Zhenwu 系列累计出货超过 560,000 个单元，服务 400+ 外部客户，覆盖 20 多个行业。
+- 已核：China Daily 报道称，阿里同时发布 ICN Switch 和可连接 128 个 AI 芯片的 Panjiu AL128 超节点服务器。
+- 已核：Bloomberg 报道称，M890 配备 144GB GPU memory，适用于训练、推理和 agentic tasks，并称阿里计划每年升级 Zhenwu 芯片。
+- 待核：性能提升、35 小时连续运行、客户部署规模均主要来自阿里披露和媒体转述，不能写成第三方独立评测结论。
+
+### 最终草稿
+阿里这次发布的重点，不是一颗新 AI 芯片，而是它把芯片放进了 agent 的交付链条里。
+
+5 月 20 日，阿里云发布 Zhenwu M890。Reuters 报道称，这颗由平头哥研发的训练/推理芯片，性能是前代 Zhenwu 810E 的三倍，面向需要长上下文、低延迟互联和多模型协作的 agent 任务。阿里还同步发布 Qwen3.7-Max，称它面向复杂编码和长程任务，最多可连续执行 35 小时。
+
+如果只看“国产芯片对英伟达”，这条新闻会被写窄。真正有意思的是，阿里没有单独讲芯片。它同时拿出了 ICN Switch、Panjiu AL128 128 卡超节点、Model Studio / 百炼平台，以及下一代 V900、J900 的路线图。China Daily 还提到，Zhenwu 系列累计出货超过 56 万个单元，外部客户超过 400 家，覆盖电信、汽车、金融等 20 多个行业。
+
+这更像一个云厂商在说：我不只给你模型，也不只给你算力，我要把 agent 跑起来需要的那一整段基础设施打包。
+
+为什么 agent 会逼出这种整栈发布？因为它和过去的聊天机器人不一样。聊天机器人多数时候是一问一答，瓶颈在模型能力和推理成本。agent 要拆任务、调工具、保留长上下文、调用多个模型，还要在企业流程里连续运行。这里的麻烦不只是一颗芯片算得快不快，还包括卡和卡之间怎么通信，模型怎么适配硬件，云平台怎么调度，企业怎么拿到稳定的服务等级。
+
+阿里把 M890、交换芯片、超节点和 Qwen3.7-Max 放在一起，其实是在补这条链路。对中国 AI 公司来说，这也是比“追赶最强模型”更现实的一条路：先把可控的算力、模型和云服务做成一套可交付系统。尤其在美国出口管制反复变化的背景下，企业客户买的不是一句“国产替代”，而是能不能稳定训练、推理、上线、扩容。
+
+这里也不能过度兴奋。M890 到底能在真实大规模训练里跑到什么效率，和英伟达成熟生态还有多大差距，需要第三方评测和客户长期使用来验证。芯片发布会能解决参数，解决不了生态。开发框架、算子、调优经验、故障处理、迁移成本，这些才是企业换基础设施时真正怕的地方。
+
+但这条线值得放进观察列表。中国 AI 竞争的重心正在从“谁发了一个更聪明的模型”，转向“谁能把模型、芯片、互联和云平台变成企业可买的一套东西”。阿里这次的信号很清楚：如果 agent 真的是下一代工作负载，那云厂商不能只当模型货架，它得把货架下面的地基也一起卖出去。
+
+### 是否建议单条/Thread
+建议单条长推。事实点多，但观点集中在“agent 时代的中国整栈 AI 基础设施”。
+
+### /dbs-ai-check 逐处检测报告
+**第一轮检测命中 5 处，其中 2 处中信号、3 处弱信号；已修改后复检，无强信号。**
+
+**第 1 处**
+> “不是一颗新 AI 芯片，而是它把芯片放进了 agent 的交付链条里。”
+
+问题：开头有“不是 X，而是 Y”的翻转，容易像 AI 写作的高差句。保留原因是全文确实要把“芯片发布”重新定位成“交付链路”，且全文只用这一次。
+`特征 #8 「不是 X 是 Y」高密度 ⚠️ 中信号`
+
+**第 2 处**
+> “芯片、交换芯片、128 卡服务器、Qwen3.7-Max 和云平台”
+
+问题：连续列举有资料卡片感。保留原因是这组事实正是“整栈交付”的证据，删掉会让判断漂空。
+`特征 #2 知识全部输出 💡 弱信号`
+
+**第 3 处**
+> “拆任务、调工具、保留长上下文、调用多个模型”
+
+问题：动作列表偏整齐。保留原因是它解释 agent 为什么会对基础设施提出不同要求，不是为了堆概念。
+`特征 #3 匀速排比 💡 弱信号`
+
+**第 4 处**
+> “芯片发布会能解决参数，解决不了生态。”
+
+问题：句子有金句感。保留原因是它把事实边界讲清楚，避免把发布会写成产业胜负已定。
+`特征 #13 每段都有收束金句 ⚠️ 中信号`
+
+**第 5 处**
+> “谁能把模型、芯片、互联和云平台变成企业可买的一套东西”
+
+问题：总结句概括度较高，有轻微升维风险。保留原因是它仍然贴着阿里这次发布的具体产品组合，没有扩成宏大口号。
+`特征 #22 对「深刻」的过拟合 💡 弱信号`
+
+**修改记录**
+- 删除“国产 AI 基建进入反攻时刻”这类口号。
+- 把“挑战英伟达”改成“企业可交付系统”，降低情绪判断。
+- 增加性能与生态仍需第三方验证的边界，避免结论太圆。
+
+### 来源
+- Reuters via Investing.com, Alibaba unveils new AI chip in push for domestic alternatives, 2026-05-20, https://www.investing.com/news/stock-market-news/alibaba-unveils-new-ai-chip-in-push-domestic-alternatives-4700211
+- China Daily, Alibaba unveils new AI chip, 2026-05-20, https://www.chinadaily.com.cn/a/202605/20/WS6a0d9b1fa310d6866eb49c3d.html
+- Bloomberg, Alibaba Unveils New AI Chip for Training and Inferencing, 2026-05-20, https://www.bloomberg.com/news/articles/2026-05-20/alibaba-unveils-new-ai-chip-for-training-and-inferencing
+- Techmeme, Alibaba's chipmaking unit T-Head unveils the Zhenwu M890 for AI training and inference, 2026-05-20, https://www.techmeme.com/260520/p9
